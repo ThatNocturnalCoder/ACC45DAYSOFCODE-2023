@@ -1,0 +1,20 @@
+print('⁂ Values are only excepted in mililiters(ml) below. ⁂')
+t=True
+while t:
+    print()
+    x=int(input("➤Please input the quantity of water consumed by the chef today:"))
+    print()
+    if x >=2000:
+        print("⁑Yes! The chef followed the doctor's advice!⁑")
+    if x < 2000:
+        print("⁑No! The chef didn't follow the doctor's advice!⁑")
+    if x < 0:
+        print("Sorry! your input is wrong!!!")
+    print()
+    print('✱Would you like to check for a different amount?')
+    v=input('➣Enter Y for yes, N for no:')
+    if v=='Y' or v=='y':
+        continue
+    if v=='N' or v=='n':
+        t=False
+print('Ok Thanks!')
