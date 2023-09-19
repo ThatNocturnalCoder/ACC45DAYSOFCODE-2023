@@ -1,0 +1,16 @@
+X=int(input('⁑Please enter the number of 5 rupee coins:'))
+print('⭒'*50)
+Y=int(input('⁑Please enter the number of 10 rupee coins:'))
+print('⭒'*50)
+Z=int(input('⁑Please enter the cost of 1 chocolate:'))
+print('⭒'*50)
+tm=(X*5)+(Y*10)
+c=0
+t=True
+while t:
+    tm=tm-Z
+    c+=1
+    if tm<=0:
+        t=False
+print('The chef can buy a total of',c,'chocolates for Chefina.')
+print('⭒'*50)
