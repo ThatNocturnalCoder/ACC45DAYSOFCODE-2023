@@ -1,0 +1,6 @@
+X=int(input("Please enter the total number of students who joined chef's coding classes this year:"))
+Y=int(input("Please enter the total number of students studying in chef's coding classes already:"))
+ts=X+Y
+c=ts-Y
+print()
+print('The chef should buy',c,'more chairs for new students.')
