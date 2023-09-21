@@ -1,0 +1,17 @@
+tchoc=100
+X=int(input("⁑Please enter today's daily goal:"))
+Y=int(input("⁑Please enter the number of chocolates sold by the chef today:"))
+print()
+tmoney=0
+if Y<=tchoc:
+    for i in range(1,Y+1):
+        if i<=X:
+            tmoney+=1
+        if i>X:
+            tmoney+=2
+if Y>=tchoc:
+    print("Sorry! these many chocolates are not available in the candy store!")
+    print()
+print("✻"*52)
+print("Total money earned by the chef today:",tmoney)
+print("✻"*52)
