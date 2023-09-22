@@ -1,0 +1,10 @@
+b=int(input("Please enter the battrey percentage of your phone:"))
+print("-"*70)
+print("Your phone's battery percentage=",b,"%")
+print("*"*70)
+if b<=15:
+    print("Yes!!! Your phone's Battery is low!!! It needs charging!!")
+else:
+    print("No!! Your phone's battery  is not low.")
+if b<0:
+    print("Sorry! Wrong input!")
