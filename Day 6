@@ -1,0 +1,12 @@
+N=int(input("Please input the total number of friends who want to go for the party:"))
+print('⭒'*80)
+print('⭒'*80)
+c=0
+t=True
+while t:
+    N-=4
+    c+=1
+    if N<=0:
+        t=False
+print(c,"cars are required to accomodate all the friends.")
+print('⭒'*80)
