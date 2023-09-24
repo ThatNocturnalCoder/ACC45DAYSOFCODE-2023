@@ -1,0 +1,22 @@
+t=True
+while t:
+    acname=input("✦Please enter the account's name:")
+    print("-"*80)
+    X=int(input("✦Please enter the 'following' count of this account:"))
+    print("-"*80)
+    Y=int(input("✦Please enter the 'followers' count of this account:"))
+    print("-"*80)
+    if X>10*Y:
+        print("               ✺     Yes,",acname,"is a spam account!!     ✺")
+    else:
+        print("               ✺     No,",acname,"is not a spam account.     ✺")
+    print("-"*80)
+    print("Do you want to check for more?")
+    cmore=input("Enter y for yes and n for no:")
+    print("-"*80)
+    if cmore=='y' or cmore=='Y':
+        continue
+    else:
+        print("                              Ok! Thanks!")
+        print("-"*80)
+        t=False
