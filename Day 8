@@ -1,0 +1,15 @@
+X=int(input("✤Please enter the water capacity of the geyser:"))
+Y=int(input("✤Please enter the water capacity of the bucket:"))
+print('-'*80)
+camowat=2*Y
+c=0
+t=True
+while t:
+    X=X-camowat
+    if X<0:
+        t=False
+    else:
+        c+=1
+        continue
+print(c,"people can take bath using water from one completely filled geyser.")
+print('-'*80)
