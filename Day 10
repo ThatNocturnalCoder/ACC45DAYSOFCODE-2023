@@ -1,0 +1,15 @@
+X=int(input("✤Please input the total amount of money with chef:"))
+print("⭑"*80)
+Y=int(input("✤Please input the cost of 1 chocolate:"))
+print("⭑"*80)
+amchoc=Y
+c=0
+t=True
+while t:
+    amchoc+=Y
+    c+=1
+    if amchoc>X:
+        t=False
+print("🍫"*50)
+print("                   The chef can buy a maximum of",c,"chocolates.")
+print("🍫"*50)
