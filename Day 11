@@ -1,0 +1,10 @@
+N=int(input("✮Please input the number of runs chef's team requires to win the cricket match:"))
+print("-"*83)
+M=int(input("✮Please input the remaining number of overs:"))
+print("✻"*52)
+tballs=M*6 
+truns=tballs*6
+if N<=truns:
+    print("                  Yes! Chef's team can win the match." )
+if N>truns:
+    print("                  No! Chef's team will lose the match.")
