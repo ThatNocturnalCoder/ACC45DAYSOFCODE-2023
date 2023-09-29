@@ -1,0 +1,19 @@
+def mario(X,Y,Z):
+    t=Y/X
+    if t>=Z:
+        b=0
+        print("➺It would take",t,"seconds for the bullet to reach the goomba.")
+        print("And Mario wants the bullet to reach the goomba after at least",Z,"seconds.")
+        print("So, he should fire the bullet after",b,"seconds.")
+        print("-"*85)
+    if t<Z:
+        b=Z-t
+        print("             Mario should shoot the bullet in",b,"seconds.")
+print("-"*85)
+X=float(input("✣Please input the speed of Mario's bullet:"))
+print("-"*85)
+Y=float(input("✣Please input the distance of goomba from Mario:"))
+print("-"*85)
+Z=float(input("✣Please input the seconds after which you want the bullet to hit goomba:"))
+print("-"*85)
+mario(X,Y,Z)
