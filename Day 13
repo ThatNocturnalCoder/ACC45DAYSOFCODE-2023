@@ -1,0 +1,20 @@
+A=int(input("✤Please input the units of power required by chefland each year:"))
+print("-"*85)
+B=int(input("✤Please input the no. of years for which chefland requires power:"))
+print("-"*85)
+tcpower=A*B
+print("➺The total amount of power needed by Chefland is:",tcpower)
+print("-"*85)
+X=int(input("✦Please input the amount of Helium-3 on moon (in grams):"))
+print("⭒"*99)
+Y=int(input("✦Please input the units of power 1g of Helium-3 provides:"))
+print("⭒"*99)
+tmpower=X*Y
+print("➺The total power that can be provided by Helium-3 on moon is:",tmpower)
+print("⭒"*99)
+if tmpower>=tcpower:
+    print("          Yes! the project satisfies the minimum requirements for funding!")
+    print("✶"*58)
+if tmpower<tcpower:
+    print("        No! the project doesn't satisfy the minimum requirements for funding!")
+    print("✶"*58)
