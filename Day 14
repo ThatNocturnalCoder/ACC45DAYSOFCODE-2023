@@ -1,0 +1,55 @@
+#✦code 1✦
+
+X=int(input("✦Please enter the stair number where chef wants to reach:"))
+print("-"*80)
+Y=int(input("✦Please input the no. of steps chef can climb in 1 move:"))
+print("-"*80)
+steps=0
+moves=0
+t=True
+while t:
+    if Y==1:
+        steps+=1
+        moves+=1
+        if steps==X:
+            break
+        else:
+            continue
+    else:
+        steps+=Y
+        moves+=1
+        if steps==X:
+            break
+        if steps>X:
+            while steps>X:
+                steps=steps-Y
+                moves=moves-1
+            steps+=1
+            moves+=1
+            if steps==X:
+                break
+        if steps<X:
+            continue
+print("✣"*52)
+print("           Chef should make",moves,"moves to reach the stair numbered",X,".")
+print("✣"*52)
+
+#✦code 2✦
+
+X=int(input("✦Please enter the stair number where chef wants to reach:"))
+print("-"*80)
+Y=int(input("✦Please input the no. of steps chef can climb in 1 move:"))
+print("-"*80)
+moves=X/Y
+moves=int(moves)
+m1=moves*Y
+while m1!=X:
+    m1+=1
+    moves+=1
+    if m1==X:
+        break
+    else:
+        continue
+print("✣"*52)
+print("           Chef should make",moves,"moves to reach the stair numbered",X,".")
+print("✣"*52)
