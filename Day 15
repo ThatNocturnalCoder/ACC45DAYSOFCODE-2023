@@ -1,0 +1,20 @@
+N=int(input("✽Please input the total number of cards kept on the table:"))
+print("-"*85)
+X=int(input("✽Please input the total number of cards kept face-up:"))
+fdown=N-X
+print("-"*85)
+if X>=fdown and X!=N:
+    print(fdown,"cards must be flipped so that all cards are facing up.")
+    print("⭑"*99)
+    print("So,",fdown,"operations are required to have all cards facing the same direction.")
+    print("⭑"*99)
+else:
+    if X<fdown and X!=0:
+        print(X,"cards must be flipped so that all cards are facing down.")
+        print("⭑"*99)
+        print("So,",X,"operations are required to have all cards facing the same direction.")
+    if X==0 or X==N:
+        print("All the cards are already facing up, therefore no need to perform any operation.")
+        print("⭑"*99)
+        print("So, no operation is required to have all cards facing the same direction.")
+    print("⭑"*99)
