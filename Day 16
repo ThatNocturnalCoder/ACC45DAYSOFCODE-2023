@@ -1,0 +1,14 @@
+N=int(input("✤Please input the total no. of candies with chef:"))
+print("-"*85)
+M=int(input("✤Please enter the total number of friends chef has:"))
+print("-"*85)
+c=int(N/M)
+if N%M==0 and c%2==0:
+    print("➺Yes it is possible! Chef can distribute the candies to his friends.")
+    print("⭑"*99)
+    print("Chef's friends will get",c,"candies each.")
+    print("⭒"*99)
+if N%M>0 or c%2!=0:
+    print("➺No! chef cannot distribute candies among his friends.")
+    print("⭑"*99)
+    print("⭒"*99)
