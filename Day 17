@@ -1,0 +1,30 @@
+print("⭒⭑"*49)
+seat=int(input("✪Please input your seat number:"))
+print("⭒⭑"*49)
+if seat>=1 and seat<=10:
+    print("             Your seat is in the lower deck and is double seated. So,")
+    print("                               ⭒⭑"+"⭒⭑"*7)
+    print("                               ⭑Lower Double⭒")
+    print("                               ⭒⭑"+"⭒⭑"*7)
+    print("⁕"*89)
+elif seat>=11 and seat<=15:
+    print("             Your seat is in the lower deck and is single seated. So,")
+    print("                               ⭒⭑"+"⭒⭑"*7)
+    print("                               ⭑Lower Single⭒")
+    print("                               ⭒⭑"+"⭒⭑"*7)
+    print("⁕"*89)
+elif seat>=16 and seat<=25:
+    print("             Your seat is in the upper deck and is double seated. So,")
+    print("                               ⭒⭑"+"⭒⭑"*7)
+    print("                               ⭑Upper Double⭒")
+    print("                               ⭒⭑"+"⭒⭑"*7)
+    print("⁕"*89)
+elif seat>=26 and seat<=30:
+    print("             Your seat is in the upper deck and is single seated. So,")
+    print("                               ⭒⭑"+"⭒⭑"*7)
+    print("                               ⭑Upper Single")
+    print("                               ⭒⭑"+"⭒⭑"*7)
+    print("⁕"*89)
+else:
+    print("                  Sorry! This seat number is not available in the bus.")
+    print("⁕"*89)
