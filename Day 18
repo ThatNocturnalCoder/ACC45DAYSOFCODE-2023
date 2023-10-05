@@ -1,0 +1,21 @@
+A=int(input("✤Please input Alice's current score:"))
+print("-"*85)
+B=int(input("✤Please input Bob's current score:"))
+print("-"*85)
+a1=0
+b1=0
+if A>=7 or B>=7:
+    print("❆"*52)
+    print('                                Match over!')
+    print("❅"*52)
+    print("It is Charlie's turn! Start playing rightaway!")
+    print("0 points are to be scored further.")
+    print("-"*85)
+if A<7:
+    a1=7-A
+    if B<7:
+        b1=7-B
+    endsc=min(a1,b1)
+    print("❆"*52)
+    print("Atleast",endsc, "points are to be scored further in the match, before it ends, for Charlie's turn.")
+    print("❅"*52)
