@@ -1,0 +1,17 @@
+PA=int(input("✤Please enter the time instant of AC submission for problem A by participant P:"))
+print("-"*85)
+PB=int(input("✤Please enter the time instant of AC submission for problem B by participant P:"))
+print("-"*85)
+QA=int(input("✤Please enter the time instant of AC submission for problem A by participant Q:"))
+print("⭑"*99)
+QB=int(input("✤Please enter the time instant of AC submission for problem B by participant Q:"))
+print("⭑"*99)
+penP=max(PA,PB)
+penQ=max(QA,QB)
+if penP < penQ:
+    print("P gets a better rank! So, participant P wins!")
+elif penQ < penP:
+    print("Q gets a better rank! So, participant Q wins!")
+else:
+    print("This is a tie!!!")
+print("✯"*52)
