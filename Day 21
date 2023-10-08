@@ -1,0 +1,13 @@
+W=float(input("✦Please enter Bob's current account balance:"))
+print("⭒⭑"*49)
+X=float(input("✤Please enter the fixed amount Bob's office deposits in his account each month:"))
+print("⭒⭑"*49)
+Y=float(input("✦Please enter the amount deducted as bank charges from Bob's account each month:"))
+print("⭒⭑"*49)
+Z=int(input("✤Please enter after how many months you want to check Bob's account balance:"))
+print("⭒⭑"*49)
+for i in range(Z):
+    W=W+X
+    W=W-Y
+print("                   Bob's account balance after",Z,"months is: ₹",W,)
+print("❉"*52)
