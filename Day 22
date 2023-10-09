@@ -1,0 +1,19 @@
+X=float(input("✦Please enter the weight of 1 mango:"))
+print("-"*85)
+Y=float(input("✦Please enter the weight of the truck:"))
+print("-"*85)
+Z=float(input("✦Please enter the weight the bridge can withstand:"))
+print("-"*85)
+max_mangoes=0
+t=True
+while t:
+    Y=Y+X
+    max_mangoes+=1
+    if Y>Z:
+        Y=Y-X
+        max_mangoes-=1
+        t=False
+print("➻The maximum number of mangoes that can be loaded into the truck:",max_mangoes)
+print("-"*85)
+print("          Thus the truck can safely cross the bridge with",max_mangoes,"mangoes.")
+print("-"*85)
