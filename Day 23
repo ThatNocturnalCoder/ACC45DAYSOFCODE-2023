@@ -1,0 +1,14 @@
+X=int(input("✮Please enter the total number of credits taken by Uttu:"))
+print("✺"*52)
+print("                          This semester has",X,"credits.")
+print("✶"*104)
+if X>65:
+    print("                      Therefore this is an Overload Semester.")
+elif X<35 and X>=0:
+    print("                      Therefore this is an Underload Semester.")
+elif X<0:
+    print("                       Sorry! credits can't be less than 0!")
+    print("                           Please enter a valid number!")
+else:
+    print("                          This is a Normal Semester.")
+print("✶"*104)
