@@ -1,0 +1,15 @@
+N=int(input("❖Please enter the total number of loaves of bread with Eikooc:"))
+print("-"*85)
+M=int(input("❖Please enter the number of days after which they will expire:"))
+print("-"*85)
+K=int(input("❖Please input the total number of loaves of bread she eats in a day:"))
+print("-"*85)
+for i in range(M):
+    N=N-K
+    if i==M-1:
+        if N>0:
+            print("No! Eikooc won't be able to finish all loaves of bread before they expire.")
+        else:
+            if N<=0:
+                print("Yes! Eikooc can finish eating all the loaves of bread before they expire.")
+print("⭑"*99)
