@@ -1,0 +1,27 @@
+print("✿ First Style","✿"*43)
+print("⭒"*99)
+X1=float(input("❃Please enter the cost of tiling the floor for the first style:"))
+print("-"*85)
+Y1=float(input("❃Please enter the cost of painting the walls for the first style:"))
+print("-"*85)
+print("✿ Second Style","✿"*42)
+print("⭒"*99)
+X2=float(input("❃Please enter the cost of tiling the floor for the second style:"))
+print("-"*85)
+Y2=float(input("❃Please enter the cost of painting the walls for the second style:"))
+print("-"*85)
+costf=X1+Y1
+costs=X2+Y2
+if costf<costs:
+    print("➻The first interior design style is cheaper.")
+    print("-"*85)
+    print("                  Therefore chef should pay an amount of ₹",costf,".")
+elif costs<costf:
+    print("➻The second interior design style is cheaper.")
+    print("-"*85)
+    print("                  Therefore chef should pay an amount of ₹",costs,".")
+else:
+    print("➻Both the styles cost the same!")
+    print("-"*85)
+    print("Chef will have to pay ₹",costs,"anyway! So, Chef should choose the style he likes.")
+print("✿"*52)
