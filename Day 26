@@ -1,0 +1,11 @@
+X=float(input("✪Please enter the amount to be paid by Uttu to get his phone repaired:"))
+print("-"*85)
+Y=float(input("✪Please enter the amount to buy a new phone:"))
+print("✣"*52)
+if X<Y:
+    print("                   It is better to get your phone repaired!")
+elif Y<X:
+    print("                       It is better to buy a new phone!")
+else:
+    print("                     The cost is same!! Choice is yours!!")
+print("-"*85)
