@@ -1,0 +1,11 @@
+iteml=int(input("❖Please enter the spice level (1-10) of the item:"))
+print("-"*85)
+if iteml>=1 and iteml<4:
+    print("➻This item comes in MILD category.")
+elif iteml>=4 and iteml<7:
+    print("➻This item comes in MEDIUM category.")
+elif iteml>=7 and iteml<=10:
+    print("➻This item comes in HOT category.")
+else:
+    print("➻This spice level isn't possible.")
+print("-"*85)
