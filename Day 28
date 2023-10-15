@@ -1,0 +1,22 @@
+X=int(input("✤Please enter the marks scored by chef:"))
+print("-"*85)
+if X<=100 and X>=0:
+    cq=X//3 #correct questio lm=iq
+    iq=X%3
+    i_q=0
+    t=True
+    if iq==0:
+        print("➺Chef got",iq,"incorrect")
+    if iq>0:
+        cq+=1
+        am=cq*3
+        while t:
+            if am>X:
+                am-=1
+                i_q+=1
+                if am==X:
+                    print("➺Chef got",i_q,"incorrect.")
+                    t=False
+else:
+    print("➺Sorry! This is not a valid score!")
+print("-"*85)
