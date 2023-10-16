@@ -1,0 +1,17 @@
+A=int(input("✤Please enter the money with Alice:"))
+print("-"*85)
+B=int(input("✤Please enter the money with Bob:"))
+print("-"*85)
+C=int(input("✤Please enter the money with Charlie:"))
+print("-"*85)
+X=int(input("✤Please input the cost of Netflix subscription:"))
+print("-"*85)
+if A+B>=X:
+    print("➺Alice and Bob can contribute to buy the Netflix subscription.")
+if A+C>=X:
+    print("➺Alice and Charlie can contribute to buy the Netflix subscription.")
+if C+B>=X:
+    print("➺Charlie and Bob can contribute to buy the Netflix subscription.")
+if A+B<X and A+C<X and B+C<X:
+    print("➺No two people can contribute to collect enough money to buy a Netflix subscription.")
+print("-"*85)
