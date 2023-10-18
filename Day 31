@@ -1,0 +1,12 @@
+N=int(input("❃Please input the total number of problems:"))
+print("-"*85)
+X=int(input("❃Please input the marks carried by each question:"))
+print("-"*85)
+Y=int(input("❃Please input the total number of marks desired by chef:"))
+print("-"*85)
+tm=N*X
+if Y%X==0 and Y<=tm:
+    print("➣Yes! Chef can score exactly",Y,"marks.")
+else:
+    print("➣No! Chef can't score exactly",Y,"marks.")
+print("-"*85)
