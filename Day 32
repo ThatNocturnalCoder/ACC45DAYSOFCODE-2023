@@ -1,0 +1,15 @@
+N=int(input("✿Please input the total number of people in chefland:"))
+print("⭑"*99)
+p=[]
+tvp=0
+for i in range(N):
+    ap=int(input("❃Please input the age of an individual:"))
+    print("⭒"*99)
+    p.append(ap)
+X=int(input("✿Please input the minimum age required to vote:"))
+print("⭑"*99)
+for i in p:
+    if i >=X:
+        tvp+=1
+print("➻There are",tvp,"eligible voters.")
+print("-"*85)
