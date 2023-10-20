@@ -1,0 +1,11 @@
+X=int(input("✪Please input the initial location of the policeman on the number line:"))
+print("-"*85)
+Y=int(input("✪Please input the initial location of the thief on the number line:"))
+print("-"*85)
+t=0
+while X<Y:
+    X+=2
+    Y+=1
+    t+=1
+print("➻The minimum time in which the policeman can catch the thief is",t,"seconds.")
+print("-"*85)
