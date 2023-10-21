@@ -1,0 +1,24 @@
+X=int(input("✤Please enter the amount of hot water with chef in litres:"))
+print("⭒"*99)
+Y=int(input("✤Please enter the amount of cold water with chef in litres:"))
+print("⭒"*99)
+A=int(input("✦Please enter the initial temperature of water in chef's bathtub:"))
+print("⭑"*99)
+B=int(input("✦Please enter the temperature required for perfect bath:"))
+print("⭑"*99)
+t=True
+while t:
+    A+=X
+    if A>=B:
+        print("Yes chef can get the desired temperature of water by adding hot water.")
+        t=False
+    else:
+        A-=X
+        A+=Y
+        if A>=B:
+            print("Yes chef can get the desired temperature of water by adding cold water.")
+            t=False
+        if A==B:
+            print("The initial and desired temperature for water is same.")
+            print("Therefore chef doesn't need to add any more water in the tub.")
+print("-"*85)
