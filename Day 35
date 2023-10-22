@@ -1,0 +1,33 @@
+W=int(input("✦Please input the weight of chef's object:"))
+print("⭑-"*45)
+X=int(input("➣Please input the weight of the first weight:"))
+print("-⭒"*45)
+Y=int(input("➣Please input the weight of the second weight:"))
+print("-⭒"*45)
+Z=int(input("➣Please input the weight of the third weight:"))
+print("-⭒"*45)
+if W==X:
+    print("➤Yes!! It is possible to measure the weight of the object!!")
+    print("➥Chef can use the first weight to measure exactly",W,"units.")
+elif W==Y:
+    print("➤Yes!! It is possible to measure the weight of the object!!")
+    print("➥Chef can use the second weight to measure exactly",W,"units.")
+elif W==Z:
+    print("➤Yes!! It is possible to measure the weight of the object!!")
+    print("➥Chef can use the third weight to measure exactly",W,"units.")
+elif W==(X+Y):
+    print("➤Yes!! It is possible to measure the weight of the object!!")
+    print("➥Chef can use the first and the second weights to measure exactly",W,"units.")
+elif W==(X+Z):
+    print("➤Yes!! It is possible to measure the weight of the object!!")
+    print("➥Chef can use the first and the third weights to measure exactly",W,"units.")
+elif W==(Y+Z):
+    print("➤Yes!! It is possible to measure the weight of the object!!")
+    print("➥Chef can use the second and the third weights to measure exactly",W,"units.")
+elif W==(X+Y+Z):
+    print("➤Yes!! It is possible to measure the weight of the object!!")
+    print("➥Chef can use the first,second and the third weights to measure exactly",W,"units.")
+else:
+    print("➤Sorry!! but no it is not possible to measure",W,"units using any combination of the")
+    print("given weights.")
+print("⭒-⭑"*31)
