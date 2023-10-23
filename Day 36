@@ -1,0 +1,11 @@
+X=int(input("❃Please input the total number of plates prepared by chef:"))
+print("⭒⭑"*49)
+Y=int(input("❃Please input the number of plates taken by each neighbour:"))
+print("⭒⭑"*49)
+n=20
+f=0
+while X>=Y and f<n:
+    X-=Y
+    f+=1
+print("➤Chef can feed",f,"neighbours completely.")
+print("⭒⭑"*49)
