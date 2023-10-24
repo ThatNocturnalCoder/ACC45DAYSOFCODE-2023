@@ -1,0 +1,31 @@
+S=float(input("❖Please enter the total storage of chef's phone:"))
+print("⭒"*99)
+X=float(input("✦Please input the storage occupied by the first app in MB:"))
+print("⭑"*99)
+Y=float(input("✦Please input the storage occupied by the second app in MB:"))
+print("⭑"*99)
+Z=float(input("✦Please input the memory requirement of the app Chef wants to install in MB:"))
+print("⭑"*99)
+sused=X+Y
+frees=S-(sused)
+if Z<=S and Z<=frees:
+    print("                    The unused memory in Chef's phone is",frees,"MB.")
+    print("-"*85)
+    print("➤Therefore Chef can install the",int(Z),"MB app without deleting any app.")
+if Z<=S and Z>=frees:
+    print("                      The unused memory in Chef's phone is",frees,"MB.")
+    print("-"*85)
+    if Z<=X or Z<=Y:
+        print("➣Therefore Chef needs to delete one of the apps to install the",int(Z),"MB app.")
+    if Z>=sused:
+        if frees+X>=Z:
+            print("➣Therefore Chef needs to delete the app occupying",int(X),"MB of the total storage")
+            print("to install the",int(Z),"MB app.")
+        elif frees+Y>=Z:
+            print("➣Therefore Chef needs to delete the app occupying",int(Y),"MB of the total storage")
+            print("to install the",int(Z),"MB app.")
+        else:
+            print("➣Therefore Chef needs to delete both the apps to install the",int(Z),"MB app.")
+    if Z>=sused and Z<=frees:
+        print("➣Therefore Chef can install the",int(Z),"MB app without deleting any app.")
+print("-"*85)
