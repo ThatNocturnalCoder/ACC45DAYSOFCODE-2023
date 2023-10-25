@@ -1,0 +1,11 @@
+print("🍕"*50)
+N=int(input("✦Please enter the number of pieces Chef wants the pizza to be cut into:"))
+print("-"*85)
+if N%2==0 and N<=100 and N>=1:
+    print("➥Yes! The pizza can be cut into",N,"pieces.")
+elif N==1:
+    print("➥Yes! Chef can have the whole pizza with 0 cuts.")
+else:
+    print("➥No! The pizza can't be cut into",N,"pieces.")
+print("⭑"*99)
+print("🍕"*50)
