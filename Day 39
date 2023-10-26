@@ -1,0 +1,16 @@
+A1=int(input("❖Please enter country A's export value:"))
+print("-"*85)
+A2=int(input("❖Please enter country A's import value:"))
+print("-"*85)
+B1=int(input("✦Please enter country B's export value:"))
+print("-"*85)
+B2=int(input("✦Please enter country B's import value:"))
+print("-"*85)
+netexpa=A1-A2
+netexpb=B1-B2
+cnetexp=netexpa+netexpb
+if cnetexp<0:
+    print("➤Yes! Country C is in trade surplus.")
+else:
+    print("➤No! Country C is not in trade surplus.")
+print("⭑"*99)
