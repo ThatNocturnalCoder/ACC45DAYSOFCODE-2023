@@ -1,0 +1,11 @@
+X=int(input("✤Please enter the money Chef has to pay in 5 and 10 rupee coins:"))
+print("-"*85)
+t=X/10
+f=(X%10)//5
+m=int(t+f)
+if X%5!=0:
+    print("-1")
+    print("➥Sorry! It is impossible to pay ₹",X,"in denominations of rupees 5 and 10 only.")
+else:
+    print("➥Chef would require at least",m,"coins to pay ₹",X,".")
+print("-"*85)
