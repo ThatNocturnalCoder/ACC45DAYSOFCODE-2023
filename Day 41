@@ -1,0 +1,10 @@
+N=int(input("✪Please enter the number of days left until Halloween:"))
+print("-"*85)
+s=0
+t=0
+for i in range(N):
+    if t==1:
+        s+=1
+    t=(t+1)%7
+print("Dracula can indulge in his favourite menu",s,"times in the next",N,"days before Halloween.")
+print("-"*85)
