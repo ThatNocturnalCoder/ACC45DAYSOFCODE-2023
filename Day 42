@@ -1,0 +1,11 @@
+print("🏓"*50)
+P=int(input("✤Please enter Alice's score when both of them forget about there scores:"))
+Q=int(input("✤Please enter Bob's score when both of them forget about there scores:"))
+print("-"*85)
+tp=P+Q
+tpo=tp%4
+if tpo<2:
+    print("➤It is Alice's serve.")
+else:
+    print("➤It is Bob's serve.")
+print("🏓"*50)
