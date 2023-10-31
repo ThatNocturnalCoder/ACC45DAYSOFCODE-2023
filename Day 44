@@ -1,0 +1,12 @@
+X=int(input("❃Please enter the duration of the movie in minutes:"))
+print("-"*85)
+Y=int(input("❃Please enter the duration of the interesting part of the movie:"))
+print("-"*85)
+tfp=Y/2
+rm=X-Y
+ttm=tfp+rm
+if Y%2==0:
+    print("➣Chef spends",int(ttm),"minutes to watch the entire movie.")
+if Y%2!=0:
+    print("➣Sorry! The duration of the interesting part should be an even number.")
+print("-"*85)
