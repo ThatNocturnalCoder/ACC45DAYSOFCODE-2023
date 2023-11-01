@@ -1,0 +1,14 @@
+N=int(input("✤Please enter the total number of Chef's friends:"))
+print("-"*85)
+M=int(input("✤Please enter the total number of left shoes Chef has already:"))
+print("-"*85)
+ls=abs(N-M)
+rs=N
+if M>N:
+    print("➺Chef must buy at least",ls,"more extra shoes to gift a pair of shoes to")
+    print("each of his friends.")
+else:
+    s=ls+rs
+    print("➺Chef must buy at least",s,"more extra shoes to gift a pair of shoes to")
+    print("each of his friends.")
+print("⭑"*99)
